@@ -105,9 +105,9 @@ public class Account
     {
         return "Account: "
                 + " Account Number: " + accountNumber
-                + " Account Number: " + holderName 
-                + " Account Number: " + holderAddress 
-                + " Account Number: " + openingDate
+                + " Holder Address  : " + holderName 
+                + " Holder Address  : " + holderAddress 
+                + " Opening Date     : " + openingDate
                 + " Account Number: " + accountNumber ;
     }
 
