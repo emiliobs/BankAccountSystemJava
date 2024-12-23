@@ -57,10 +57,10 @@ public class Transaction
     @Override
     public String toString()
     {
-        return "Transaction: "
-                + "Type Transaction: " + typeTransaction
-                + "Amount                : " + amount
-                + "Date                     : " + date;
+        return "Transaction: " 
+                + "Type : " + typeTransaction 
+                + ", Amount: " + amount 
+                + ", Date : " + date;
                 
     }
 

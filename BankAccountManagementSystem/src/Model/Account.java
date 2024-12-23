@@ -105,12 +105,12 @@ public class Account
     @Override
     public String toString()
     {
-        return "Account: "
-                + " Account Number: " + accountNumber
-                + " Holder Address  : " + holderName 
-                + " Holder Address  : " + holderAddress 
-                + " Opening Date     : " + openingDate
-                + " Account Number: " + accountNumber ;
+        return "Account: " + "\n"
+                + "  Account Number: " + accountNumber + "\n" 
+                + "  Holder Address  : " + holderName + "\n" 
+                + "  Holder Address  : " + holderAddress + "\n" 
+                + "  Opening Date     : " + openingDate + "\n" 
+                + "  Current Balance : " + currentBalance ;
     }
 
     

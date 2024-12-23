@@ -2,6 +2,7 @@ package View;
 
 import Model.Account;
 import Model.Transaction;
+import Repository.AccountRepository;
 import Service.AccountService;
 import java.util.List;
 import java.util.Scanner;
@@ -19,7 +20,7 @@ public class AccountView
     public AccountView(AccountService accountService)
     {
         this.accountService = accountService;
-        this.scanner = scanner;
+        this.scanner =  new Scanner(System.in);
     }
 
     public void displayMenu()
@@ -57,6 +58,7 @@ public class AccountView
                     break;
                 case 6: 
                     System.out.println("Exiting..... Goodbye!");
+                    return;
                 default:
                     System.out.println("Invalid choice, Try again.");;
             }
@@ -144,4 +146,18 @@ public class AccountView
             transactions.forEach(System.out::println);
         }
     }
+    
+    
+//    public static void main(String[] args)
+//    {
+// AccountRepository repository = new AccountRepository();
+// AccountService service = new AccountService(repository);
+//  AccountView accountView = new AccountView(service);
+//        
+//        accountView.displayMenu();
+//    }
+    
 }
+
+
+
