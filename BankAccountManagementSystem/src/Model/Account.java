@@ -21,14 +21,14 @@ public class Account
     {
     }
 
-    public Account(String accountNumber, String holderName, String holderAddress, String openingDate, double currentBalance, LinkedList<Transaction> transactions)
+    public Account(String accountNumber, String holderName, String holderAddress, String openingDate, double currentBalance)
     {
         this.accountNumber = accountNumber;
         this.holderName = holderName;
         this.holderAddress = holderAddress;
         this.openingDate = openingDate;
         this.currentBalance = currentBalance;
-        this.transactions = transactions;
+        this.transactions =  new LinkedList<>();
     }
 
     public String getOpeningDate()
@@ -98,6 +98,8 @@ public class Account
         {
             transactions.removeFirst(); // Keep only the las 4 transaction.
         }
+        
+        transactions.add(transaction);
     }
 
     @Override

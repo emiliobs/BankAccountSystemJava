@@ -6,7 +6,7 @@ import java.util.Date;
  *
  * @author Emilio
  */
-class Transaction
+public class Transaction
 {
 
     private String typeTransaction; // Deposit or Withdrawal
@@ -17,11 +17,11 @@ class Transaction
     {
     }
 
-    public Transaction(String typeTransaction, double amount, Date date)
+    public Transaction(String typeTransaction, double amount)
     {
         this.typeTransaction = typeTransaction;
         this.amount = amount;
-        this.date = date;
+        this.date = new Date();
     }
 
     public Date getDate()
