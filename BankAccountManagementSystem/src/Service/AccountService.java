@@ -66,5 +66,10 @@ public class AccountService
        
        return  transactions;
    }
+   
+   public void deleteAccount(String accountNumber)
+   {
+       accountRepository.deleteAccount(accountNumber);
+   }
     
 }
